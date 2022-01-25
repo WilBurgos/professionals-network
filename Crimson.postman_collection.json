@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "8019d8d3-60ff-4114-ac0a-25bf95385af5",
+		"name": "Crimson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "App",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://crimson_circle.test/",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\" : \"Carlos\",\r\n    \"last_name\" : \"Vallarta\",\r\n    \"email\" : \"vallarta@example.com\",\r\n    \"password\" : \"BUMW950330\",\r\n    \"country\" : \"Colombia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://crimson_circle.test/api/register",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"wili_105_jc95@hotmail.com\",\r\n    \"password\": \"BUMW950330\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://crimson_circle.test/api/login",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Account",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODNhOTk2OGUxZGIxYWI5YzdkMDg0MTVmM2ZhZDQ2MTI1MDdhZTgwZGZiNTFmYzk4M2ViMDcxY2RkOWU1MzA3ZWU0OWI3MWRkZDNkZjMzZmYiLCJpYXQiOjE2NDMxMzM1MzguMjY1MDM0LCJuYmYiOjE2NDMxMzM1MzguMjY1MDQxLCJleHAiOjE2NzQ2Njk1MzguMDYwMjc5LCJzdWIiOiIxNjQiLCJzY29wZXMiOltdfQ.kH_CvIjFd3hvKsyNWCkuEXk1KvbN8k54EznOtNkm8aEkBnLrMQeL74NItUU2eg1jiarJ8GX7o86CSdsfjCh6RsKESHr4cLfr4THxxcgkuJd4QLonlIZXsmdf13k85OJnPS7UMvpWXevLlHf2CYaEM6QA6kMyEgGz-7PJ3kGBP47LxjnkFxNCgZpfwYRBRmiGq0zTWW5NOupV2gDetZuqMm0mk9-_a4TpQTHDv_UdtgR3mPkZelUcao7p-DLDLCpjkLG-fm109ZlY6oJFR8loUYRCuoz5SYI43ZfeYnrI0FQPzfU0rXXSYTNLqz2vhCSw4n4SIoz5EZIzs9dxc5qZal_mlw0gv4BqsJmVr9Pbby4M5wKnq02TFa7AEyneKS5MxAh7etP_ISBN4bG7OswPNlKEl6Fj4Fn3AwvWbj1NiuOWQI_LdWgWJI4E8t2jZeEOYDxyxKuL1CHy6LqMpEd5hyRW80uknOCb6OFJ49XfvjgesjjHmaLCDshO6168W4aaoKeR_UjJTLBiETsJXXkktMUmhIXBZHZjNG-MtvN4zULXvAVZS-rwPfb7YK2vsfYuAcnBsSE_aEbcofakFIFQim5QUKZwvj5o3nMKp7omwuWwO6MVQBpEC9kbqfgw-yd1eK9hVg8-zWdx458J-_4_iys3zt5bCU5vMbple3zToLY",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "carlosVal@example.com",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "BUMW950330",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Carlos\",\r\n    \"last_name\": \"Martinez\",\r\n    \"email\": \"carlosVal@example.com\",\r\n    \"password\":\"BUMW950330\",\r\n    \"country\" : \"Colombia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://crimson_circle.test/api/account/update-account",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"account",
+						"update-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODNhOTk2OGUxZGIxYWI5YzdkMDg0MTVmM2ZhZDQ2MTI1MDdhZTgwZGZiNTFmYzk4M2ViMDcxY2RkOWU1MzA3ZWU0OWI3MWRkZDNkZjMzZmYiLCJpYXQiOjE2NDMxMzM1MzguMjY1MDM0LCJuYmYiOjE2NDMxMzM1MzguMjY1MDQxLCJleHAiOjE2NzQ2Njk1MzguMDYwMjc5LCJzdWIiOiIxNjQiLCJzY29wZXMiOltdfQ.kH_CvIjFd3hvKsyNWCkuEXk1KvbN8k54EznOtNkm8aEkBnLrMQeL74NItUU2eg1jiarJ8GX7o86CSdsfjCh6RsKESHr4cLfr4THxxcgkuJd4QLonlIZXsmdf13k85OJnPS7UMvpWXevLlHf2CYaEM6QA6kMyEgGz-7PJ3kGBP47LxjnkFxNCgZpfwYRBRmiGq0zTWW5NOupV2gDetZuqMm0mk9-_a4TpQTHDv_UdtgR3mPkZelUcao7p-DLDLCpjkLG-fm109ZlY6oJFR8loUYRCuoz5SYI43ZfeYnrI0FQPzfU0rXXSYTNLqz2vhCSw4n4SIoz5EZIzs9dxc5qZal_mlw0gv4BqsJmVr9Pbby4M5wKnq02TFa7AEyneKS5MxAh7etP_ISBN4bG7OswPNlKEl6Fj4Fn3AwvWbj1NiuOWQI_LdWgWJI4E8t2jZeEOYDxyxKuL1CHy6LqMpEd5hyRW80uknOCb6OFJ49XfvjgesjjHmaLCDshO6168W4aaoKeR_UjJTLBiETsJXXkktMUmhIXBZHZjNG-MtvN4zULXvAVZS-rwPfb7YK2vsfYuAcnBsSE_aEbcofakFIFQim5QUKZwvj5o3nMKp7omwuWwO6MVQBpEC9kbqfgw-yd1eK9hVg8-zWdx458J-_4_iys3zt5bCU5vMbple3zToLY",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "carlosVal@example.com",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "BUMW950330",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://crimson_circle.test/api/account/delete-account",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"account",
+						"delete-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Import Users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDA2MmQzODcyMjg4MGFkNmM5ZDBiNzkyZDEzODNlNDAwMTExNTEwNTQ1MGY1OTgxYmU0ZmZlYTE4ZGI4N2ZkZjBhZmY4NDE0MzJjMjAzMTAiLCJpYXQiOjE2NDMwMTIzMDcuMDEwOTc5LCJuYmYiOjE2NDMwMTIzMDcuMDExLCJleHAiOjE2NzQ1NDgzMDYuOTU0NzM0LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.oUwgpQ1iqqFUgPsKIaQiqtn4lhUZMs7Wv3TfApsgtP1e9IrOfoGQH3qcoVQTglq_yL0xn-KT-cLqRnbf3zZTtmoMdkbIOMKOTJbycIWRwvfZg82y6X0gtHCU48U8sYuwH-kpczfz3q-Tq5NcL4_e8hj4eP27TIG1ROb3KhJmXzC-FS_Lo1S5R29J13pdzX1kcbj7Ogqs6FvUnNUZDk6wMGujX3CkzEb5axqqeTnlNznEcZx911sdPD6UHkad155bPEVdApJ0SMfNUsWoku-Hey7DNB8zeTPP_sFvHHKBJDROqVgvhOVfuIDUQtxXK08ystL0DabW90iD48_MNGBlc7cF41Mwwb1S2fctu9f5oESTnk9zkNsHMVGHCrekUltU_TRpNYMvoHbYFKd34M7NWYJAuU1gohk0cM8x6htZgVjlljUGLgu5PtNCVCMrF5Ou4Q8SITUfI9B22i7CyB3nt_g6fcptSjPLJRadbqsDACuvEZtd8ypqO4xaiBtPvnCNl8HVwQbwkYvFroNcCB0x2Tpa_N0QSHg5F5MGBoK81uFPH5WGUNtlmCUz-axDVzpoS8i8AB8rzZoM6PwrZVHP5cbgbI6DaMnX6fT-lHqErA3mDFJPiPAPYFRU5bhTnWxQ_HqIIXPwL4jUqYEhkTt7xB6h4-509jtW_xQd-7n6sP4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number_of_users\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://crimson_circle.test/api/account/import-accounts",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"account",
+						"import-accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Relation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWFiZDIxNWJlNWVmMzI2YzFiOWEwZTU2Y2YxYjYyYmM3YzBiMWI5Y2NhMjljN2Y1MjQwYjNmNzg2YTA5MDNlNWViZjhkYTAwMTc3NmExODEiLCJpYXQiOjE2NDMxMzgwMTYuMTkyNzQ1LCJuYmYiOjE2NDMxMzgwMTYuMTkyNzU0LCJleHAiOjE2NzQ2NzQwMTYuMTMzNjczLCJzdWIiOiIxMyIsInNjb3BlcyI6W119.xUgdkyHdof0CdRRAdWn37vsl24GwEAKLNiZXAKrW9ngm7zDAhqEg38A-sdjJskVqpyN8Zd5DScoREcZYzIfVd5_MCDZDDrDUvyrtgkSrrn6XEtTXL0Eol50esqbNPGl8P7gu8rtVWFVmIPmD6sNF2RY02JdBWOH8RmmJlsahNRukkySvgOnIEPgRT_3Ad-IRTc5iV9wCo8pHCjsiw6lZp2TEkN4IheL4XW4UL1ucEpyULgYuW0Pv3wI8ULuErlA2zQ6WhVZXKpw-oANXnrzOl4eq7QD1ujsdRX92NwIX5K9zCkxZq-gTML6FR4c_AHGQOcTCXhObAv5PwgFmpP04wd-eMrHcpNUBlOW2omDkU3kcU-hv6teCGb0W-HWmZQJ2jsk5iGcI5dET644yhUvFxkQLRReBSnoyaHQ8-rD1-RHif_lHMJvU_ecxl_ECZmKaDEpd5CAez9pkxYVbOz6YSCJ1kjZuy2MWtgiQ5QXFCvKaA_jkObnT5UyOB8CBOTcmiDYW7_WtCd0diSmta681AKsrgT-kygJ-ZwhxXUlqFQtCelN-OOVL3_FeC7Pld-IKK1fLaI1BKXS-OAScfrimnyXeiy9D2Kir2N6rIGUOQmn0yoVd3Lt4IqiVusFJ9scJnT-mVn6oZMOl0h2v2Oaz_rVyxOLy1jaeJwoxfp-piYA",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "wili_105_jc95@hotmail.com",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "BUMW950330",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\":\"weimann.brody@example.org\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://crimson_circle.test/api/relation/add-relation",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"relation",
+						"add-relation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Relations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDFjMTU3YmU4NzlmNTNhYmNkNTA4ZDMyZmI2ZWQ3OGQwYTY0Y2U1NTg5YWIwODRmOGI2YTFjODA4NmRjNmIxNjhhMDNmMGU4YjI2ZjM1YjciLCJpYXQiOjE2NDMwOTUyNDguNzA2MTczLCJuYmYiOjE2NDMwOTUyNDguNzA2MTgsImV4cCI6MTY3NDYzMTI0OC42MDg4NDUsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.pGnBrtNOhjhvuE5hegQdG2q760BL1WFafyXCsX4aeZgNudlavitcpGhEl4Zs2w-8jiF2V_EHxj2-l8A3gbNiwx8Sd9iUS05XWgmHydT29a8EaJ5S3ZQ3f2RfIvtmlkpl3XoAlLzrymG5Xx9BE5WIRXjTMvJA1jRTmpdsqJj8Yl_WZJcoXXK3xuJl0EC-EWJeVVkMsfV3NGI2WpNQ9jvu382wOBzQnDukEMxhiaFCdGD_V2S-IcnVnDXwIqD0jmNvT8CVm16eRUS7BbUmPDT1qGI5ljl4c2zUPzi9VJBS-Bdh2TPhcuJUDT0kiACXI3u0ptarrcGZpT-zc8Ay-GzdD3wLEd3BNJtxGwDyw4nbWAvTFW0bXgLKS6PdCFVHLKq_f1gv5YFgxQvNObmdiAVkGNWj-XFC8Mt2GeRV3SiyrRiNSO71b3eCjmsG7jC-Oq8OG23ApgrZpsp9xnxEOTmZ3z4Ia-VEGEKVoBJYCib4QfGSEQyBDOGjvzbySfPwMtESsARoTXzz_Op1Ba6n1BFnPSSm-1uQ80Ex7z5jGicEFJkMpZ6Br_2UKBj_59bXPnpbYvZd2u32ETliROfDA3-oErmMgATKN__q975iqU89Eo92aym8lum1AqAfB2FeqQwYTsfGQe1VRVNjYqRL1UWux-OBKUIVt2mRvnREbTvTsIs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filter\":\"direct\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://crimson_circle.test/api/relation/relations",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"relation",
+						"relations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Random Relations",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDFjMTU3YmU4NzlmNTNhYmNkNTA4ZDMyZmI2ZWQ3OGQwYTY0Y2U1NTg5YWIwODRmOGI2YTFjODA4NmRjNmIxNjhhMDNmMGU4YjI2ZjM1YjciLCJpYXQiOjE2NDMwOTUyNDguNzA2MTczLCJuYmYiOjE2NDMwOTUyNDguNzA2MTgsImV4cCI6MTY3NDYzMTI0OC42MDg4NDUsInN1YiI6IjMiLCJzY29wZXMiOltdfQ.pGnBrtNOhjhvuE5hegQdG2q760BL1WFafyXCsX4aeZgNudlavitcpGhEl4Zs2w-8jiF2V_EHxj2-l8A3gbNiwx8Sd9iUS05XWgmHydT29a8EaJ5S3ZQ3f2RfIvtmlkpl3XoAlLzrymG5Xx9BE5WIRXjTMvJA1jRTmpdsqJj8Yl_WZJcoXXK3xuJl0EC-EWJeVVkMsfV3NGI2WpNQ9jvu382wOBzQnDukEMxhiaFCdGD_V2S-IcnVnDXwIqD0jmNvT8CVm16eRUS7BbUmPDT1qGI5ljl4c2zUPzi9VJBS-Bdh2TPhcuJUDT0kiACXI3u0ptarrcGZpT-zc8Ay-GzdD3wLEd3BNJtxGwDyw4nbWAvTFW0bXgLKS6PdCFVHLKq_f1gv5YFgxQvNObmdiAVkGNWj-XFC8Mt2GeRV3SiyrRiNSO71b3eCjmsG7jC-Oq8OG23ApgrZpsp9xnxEOTmZ3z4Ia-VEGEKVoBJYCib4QfGSEQyBDOGjvzbySfPwMtESsARoTXzz_Op1Ba6n1BFnPSSm-1uQ80Ex7z5jGicEFJkMpZ6Br_2UKBj_59bXPnpbYvZd2u32ETliROfDA3-oErmMgATKN__q975iqU89Eo92aym8lum1AqAfB2FeqQwYTsfGQe1VRVNjYqRL1UWux-OBKUIVt2mRvnREbTvTsIs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number_relations\":200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://crimson_circle.test/api/relation/random-relations",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"relation",
+						"random-relations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Relation",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWFiZDIxNWJlNWVmMzI2YzFiOWEwZTU2Y2YxYjYyYmM3YzBiMWI5Y2NhMjljN2Y1MjQwYjNmNzg2YTA5MDNlNWViZjhkYTAwMTc3NmExODEiLCJpYXQiOjE2NDMxMzgwMTYuMTkyNzQ1LCJuYmYiOjE2NDMxMzgwMTYuMTkyNzU0LCJleHAiOjE2NzQ2NzQwMTYuMTMzNjczLCJzdWIiOiIxMyIsInNjb3BlcyI6W119.xUgdkyHdof0CdRRAdWn37vsl24GwEAKLNiZXAKrW9ngm7zDAhqEg38A-sdjJskVqpyN8Zd5DScoREcZYzIfVd5_MCDZDDrDUvyrtgkSrrn6XEtTXL0Eol50esqbNPGl8P7gu8rtVWFVmIPmD6sNF2RY02JdBWOH8RmmJlsahNRukkySvgOnIEPgRT_3Ad-IRTc5iV9wCo8pHCjsiw6lZp2TEkN4IheL4XW4UL1ucEpyULgYuW0Pv3wI8ULuErlA2zQ6WhVZXKpw-oANXnrzOl4eq7QD1ujsdRX92NwIX5K9zCkxZq-gTML6FR4c_AHGQOcTCXhObAv5PwgFmpP04wd-eMrHcpNUBlOW2omDkU3kcU-hv6teCGb0W-HWmZQJ2jsk5iGcI5dET644yhUvFxkQLRReBSnoyaHQ8-rD1-RHif_lHMJvU_ecxl_ECZmKaDEpd5CAez9pkxYVbOz6YSCJ1kjZuy2MWtgiQ5QXFCvKaA_jkObnT5UyOB8CBOTcmiDYW7_WtCd0diSmta681AKsrgT-kygJ-ZwhxXUlqFQtCelN-OOVL3_FeC7Pld-IKK1fLaI1BKXS-OAScfrimnyXeiy9D2Kir2N6rIGUOQmn0yoVd3Lt4IqiVusFJ9scJnT-mVn6oZMOl0h2v2Oaz_rVyxOLy1jaeJwoxfp-piYA",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "wili_105_jc95@hotmail.com",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "BUMW950330",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\":\"wpagac@example.org\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://crimson_circle.test/api/relation/delete-relation",
+					"protocol": "http",
+					"host": [
+						"crimson_circle",
+						"test"
+					],
+					"path": [
+						"api",
+						"relation",
+						"delete-relation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
