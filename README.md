@@ -4,6 +4,14 @@
 ```bash
 composer install
 copy env.example to .env
+
+```
+## Database
+```bash
+Create database from the sql file. There is in the database folder of the project
+or
+Create your database like DB_DATATBASE on your .env
+Run commands
 php artisan migrate
 php artisan passport:install
 ```
