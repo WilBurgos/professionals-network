@@ -3,9 +3,9 @@
 ## Installation
 ```bash
 composer install
+copy env.example to .env
 php artisan migrate
 php artisan passport:install
-copy env.example to .env
 ```
 
 ## Dump file
