@@ -1,15 +1,19 @@
 # Professional Network
 
 ## Installation
+```bash
 composer install
 php artisan migrate
 php artisan passport:install
+```
 
 ## Dump file
+```bash
 The sql file is in the database folder of the project
+```
 
 ## Api's
-[![Postman](https://www.getpostman.com/collections/30b1df2ef9c6d009dfac)](https://www.getpostman.com/collections/30b1df2ef9c6d009dfac)
+https://www.getpostman.com/collections/30b1df2ef9c6d009dfac
 
 # Lumen PHP Framework
 
