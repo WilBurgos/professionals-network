@@ -14,10 +14,17 @@ class LoginController extends Controller
     public function login(LoginRequest $request){
         $user = User::where('email', $request->email)->first();
 
-        if(Crypt::decrypt($user->password) != $request->password){
+        if($user){
+            if(Crypt::decrypt($user->password) != $request->password){
+                return response()->json([
+                    'result' => false,
+                    'reason' => 'Incorrect password'
+                ], 401);
+            }
+        }else{
             return response()->json([
                 'result' => false,
-                'reason' => 'Incorrect password'
+                'reason' => 'There is no email in our records'
             ], 401);
         }
 
@@ -27,6 +34,17 @@ class LoginController extends Controller
             "result" => true,
             "message" => "Authenticated user",
             "token" => $accessToken
+        ],200);
+    }
+
+    public function logout(){
+        Auth()->user()->tokens->each(function($token, $key) {
+            $token->delete();
+        });
+
+        return response()->json([
+            "result" => true,
+            "message" => "Successfully logged out"
         ],200);
     }
 }

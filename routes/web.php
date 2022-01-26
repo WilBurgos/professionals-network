@@ -20,12 +20,12 @@ $router->get('/', function () use ($router) {
 $router->group(['prefix' => 'api'], function () use ($router){
     $router->post('/login','Auth\LoginController@login');
     $router->post('/register','Auth\RegisterController@register');
+    $router->post('/import-accounts','UserController@import_users');
 
     $router->group(['middleware' => 'auth'], function () use ($router) {
         $router->group(['prefix' => 'account'], function () use ($router){
             $router->put('/update-account','UserController@update_user');
             $router->delete('/delete-account','UserController@delete_user');
-            $router->post('/import-accounts','UserController@import_users');
         });
         $router->group(['prefix' => 'relation'], function () use ($router){
             $router->post('/add-relation','RelationController@add_relation');
@@ -33,6 +33,8 @@ $router->group(['prefix' => 'api'], function () use ($router){
             $router->post('/relations','RelationController@get_relations');
             $router->post('/random-relations','RelationController@random_relations');
         });
+
+        $router->post('logout','Auth\LoginController@logout');
     });
 });
 

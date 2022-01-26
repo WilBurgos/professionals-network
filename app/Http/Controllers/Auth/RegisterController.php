@@ -23,14 +23,11 @@ class RegisterController extends Controller
             $user->country      = Countries::search_country($request->country);
             $user->save();
 
-            $accessToken    = $user->createToken('CRIMSON-TOKEN')->accessToken;
-
             DB::commit();
 
             return response()->json([
                 "result" => true,
-                "message" => "Registered user successfully",
-                "token" => $accessToken
+                "message" => "Registered user successfully"
             ],200);
 
         } catch (\Throwable $th) {
